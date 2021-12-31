@@ -1,0 +1,8 @@
+[package]
+name = "bug-cargo-overlapping-crate-names"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+foo-package-name = { path = "./foo1" }
+foo-crate-name = { package = "foo-package-name", path = "./foo2" }
